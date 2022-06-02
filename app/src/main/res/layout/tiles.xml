@@ -35,8 +35,4 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content" />
 
-    <org.nameless.gamespace.widget.tiles.LockGestureTile
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content" />
-
 </GridLayout>
