@@ -24,45 +24,8 @@
         app:lottie_rawRes="@raw/game_settings_illustration" />
 
     <PreferenceCategory
-        android:key="in_game_preferences"
-        android:title="@string/in_game_preferences_title">
-
-        <ListPreference
-            android:defaultValue="3"
-            android:entries="@array/ringer_mode_entries"
-            android:entryValues="@array/ringer_mode_values"
-            android:key="gamespace_ringer_mode"
-            android:summary="%s"
-            android:title="@string/ringer_mode_title" />
-
-        <com.android.settings.custom.preference.SystemSettingSwitchPreference
-            android:key="gamespace_suppress_fullscreen_intent"
-            android:summary="@string/suppress_fullscreen_intent_summary"
-            android:title="@string/suppress_fullscreen_intent_title" />
-
-        <com.android.settings.custom.preference.SwitchPreference
-            android:defaultValue="false"
-            android:key="gamespace_stay_awake"
-            android:title="@string/stay_awake_title" />
-
-        <com.android.settings.custom.preference.SwitchPreference
-            android:defaultValue="false"
-            android:key="gamespace_lock_gesture"
-            android:title="@string/lock_gesture_title" />
-
-        <com.android.settings.custom.preference.SwitchPreference
-            android:key="gamespace_auto_brightness_disabled"
-            android:title="@string/auto_brightness_disabled_title" />
-
-        <com.android.settings.custom.preference.SwitchPreference
-            android:defaultValue="false"
-            android:key="gamespace_tfgesture_disabled"
-            android:title="@string/three_screenshot_disabled_title" />
-
-        <com.android.settings.custom.preference.SwitchPreference
-            android:defaultValue="false"
-            android:key="gamespace_adb_disabled"
-            android:title="@string/adb_disabled_title" />
+        android:key="in_game_overlay_category"
+        android:title="@string/in_game_overlay_category_title">
 
         <com.android.settings.custom.preference.CustomSeekBarPreference
             android:key="gamespace_menu_opacity"
@@ -71,7 +34,63 @@
             android:max="100"
             app:min="20"
             app:units="%" />
+    </PreferenceCategory>
 
+    <PreferenceCategory
+        android:key="disable_options_category"
+        android:title="@string/disable_options_category_title">
+
+        <com.android.settings.custom.preference.SwitchPreference
+            android:key="gamespace_auto_brightness_disabled"
+            android:summary="@string/auto_brightness_disabled_summary"
+            android:title="@string/auto_brightness_disabled_title" />
+
+        <com.android.settings.custom.preference.SwitchPreference
+            android:defaultValue="false"
+            android:key="gamespace_tfgesture_disabled"
+            android:summary="@string/three_screenshot_disabled_summary"
+            android:title="@string/three_screenshot_disabled_title" />
+
+        <com.android.settings.custom.preference.SwitchPreference
+            android:defaultValue="false"
+            android:key="gamespace_adb_disabled"
+            android:summary="@string/adb_disabled_summary"
+            android:title="@string/adb_disabled_title" />
+    </PreferenceCategory>
+
+    <PreferenceCategory
+        android:key="notification_options_category"
+        android:title="@string/notification_options_category_title">
+
+        <com.android.settings.custom.preference.SystemSettingSwitchPreference
+            android:key="gamespace_suppress_fullscreen_intent"
+            android:summary="@string/suppress_fullscreen_intent_summary"
+            android:title="@string/suppress_fullscreen_intent_title" />
+
+        <ListPreference
+            android:defaultValue="3"
+            android:entries="@array/ringer_mode_entries"
+            android:entryValues="@array/ringer_mode_values"
+            android:key="gamespace_ringer_mode"
+            android:summary="%s"
+            android:title="@string/ringer_mode_title" />
+    </PreferenceCategory>
+
+    <PreferenceCategory
+        android:key="misc_options_category"
+        android:title="@string/misc_options_category_title">
+
+        <com.android.settings.custom.preference.SwitchPreference
+            android:defaultValue="false"
+            android:key="gamespace_lock_gesture"
+            android:summary="@string/lock_gesture_summary"
+            android:title="@string/lock_gesture_title" />
+
+        <com.android.settings.custom.preference.SwitchPreference
+            android:defaultValue="false"
+            android:key="gamespace_stay_awake"
+            android:summary="@string/stay_awake_summary"
+            android:title="@string/stay_awake_title" />
     </PreferenceCategory>
 
     <org.nameless.gamespace.preferences.AppListPreferences
