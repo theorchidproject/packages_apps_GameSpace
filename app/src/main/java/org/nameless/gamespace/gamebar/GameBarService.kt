@@ -181,7 +181,7 @@ class GameBarService : Hilt_GameBarService() {
     private fun onActionStart() {
         rootBarView.isVisible = false
         rootBarView.alpha = 0f
-        if (!rootBarView.isAttachedToWindow) {
+        if (!rootBarView.isAttachedToWindow && appSettings.showOverlay) {
             wm.addView(rootBarView, barLayoutParam)
         }
         handler.postDelayed(firstPaint, 500)
@@ -191,13 +191,13 @@ class GameBarService : Hilt_GameBarService() {
         if (::rootPanelView.isInitialized && rootPanelView.isAttachedToWindow) {
             wm.removeViewImmediate(rootPanelView)
         }
-        if (rootBarView.isAttachedToWindow) {
+        if (rootBarView.isAttachedToWindow && appSettings.showOverlay) {
             wm.removeViewImmediate(rootBarView)
         }
     }
 
     private fun updateLayout(with: (WindowManager.LayoutParams) -> Unit = {}) {
-        if (rootBarView.isAttachedToWindow) {
+        if (rootBarView.isAttachedToWindow && appSettings.showOverlay) {
             wm.updateViewLayout(rootBarView, barLayoutParam.apply(with))
         }
     }

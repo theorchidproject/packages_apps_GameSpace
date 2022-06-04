@@ -27,6 +27,11 @@
         android:key="in_game_overlay_category"
         android:title="@string/in_game_overlay_category_title">
 
+        <com.android.settings.custom.preference.SwitchPreference
+            android:key="gamespace_show_overlay"
+            android:summary="@string/gamespace_show_overlay_summary"
+            android:title="@string/gamespace_show_overlay_title" />
+
         <com.android.settings.custom.preference.CustomSeekBarPreference
             android:key="gamespace_menu_opacity"
             android:title="@string/gamespace_menu_opacity_title"
