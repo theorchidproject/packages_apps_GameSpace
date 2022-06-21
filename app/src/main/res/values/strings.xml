@@ -45,8 +45,9 @@
     <string name="in_game_calls_rejected_number">Rejected call from %1$s</string>
     <string name="in_game_notifications_title">In-game notifications</string>
     <string name="in_game_notifications_hide">Do not show</string>
-    <string name="in_game_notifications_headsup">Show as heads up</string>
+    <string name="in_game_notifications_headsup">Show as Heads Up</string>
     <string name="in_game_notifications_reticker">Show as reTicker</string>
+    <string name="in_game_notifications_danmaku">Show as Danmaku</string>
     <string name="ringer_mode_title">Ringer mode</string>
     <string name="ringer_mode_silent">Silent</string>
     <string name="ringer_mode_vibrate">Vibrate</string>
@@ -82,6 +83,11 @@
     <!-- Tiles -->
     <string name="game_mode_title">Mode</string>
     <string name="fps_Info_title">FPS info</string>
+    <string name="notifications_title">Notifications</string>
+    <string name="notifications_hide">Hide</string>
+    <string name="notifications_headsup">Heads Up</string>
+    <string name="notifications_reticker">reTicker</string>
+    <string name="notifications_danmaku">Danmaku</string>
     <string name="state_enabled">enabled</string>
     <string name="state_disabled">disabled</string>
 </resources>
