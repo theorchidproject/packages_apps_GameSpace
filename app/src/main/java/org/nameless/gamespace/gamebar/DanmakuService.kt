@@ -40,6 +40,8 @@ import android.widget.TextView
 
 import androidx.core.animation.addListener
 
+import com.android.internal.util.custom.CustomUtils
+
 import dagger.hilt.android.qualifiers.ApplicationContext
 import dagger.hilt.android.scopes.ServiceScoped
 
@@ -143,12 +145,16 @@ class DanmakuService @Inject constructor(
         layoutParams.width = (NOTIFICATION_MAX_WIDTH * windowManager.currentWindowMetrics.bounds.width()) / 100
         notificationOverlay.setTextSize(
             TypedValue.COMPLEX_UNIT_PX,
-            (if (isPortrait) NOTIFICATION_SIZE_PORTRAIT else NOTIFICATION_SIZE_LANDSCAPE).toFloat()
+            (if (isPortrait) NOTIFICATION_SIZE_PORTRAIT * getScale() else NOTIFICATION_SIZE_LANDSCAPE * getScale()).toFloat()
         )
     }
 
+    private fun getScale(): Float {
+        return CustomUtils.getLowerResolutionScale(true)
+    }
+
     private fun getOffsetForPosition(): Int {
-        return if (isPortrait) verticalOffsetPortrait else verticalOffsetLandscape
+        return if (isPortrait) (verticalOffsetPortrait * getScale()).toInt() else (verticalOffsetLandscape * getScale()).toInt()
     }
 
     private fun showNotificationAsOverlay(notification: String) {
