@@ -30,7 +30,8 @@
         <com.android.settings.custom.preference.SwitchPreference
             android:key="gamespace_show_overlay"
             android:summary="@string/gamespace_show_overlay_summary"
-            android:title="@string/gamespace_show_overlay_title" />
+            android:title="@string/gamespace_show_overlay_title"
+            android:defaultValue="true" />
 
         <com.android.settings.custom.preference.CustomSeekBarPreference
             android:key="gamespace_menu_opacity"
