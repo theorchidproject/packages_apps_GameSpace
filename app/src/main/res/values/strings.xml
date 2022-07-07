@@ -90,4 +90,7 @@
     <string name="notifications_danmaku">Danmaku</string>
     <string name="state_enabled">enabled</string>
     <string name="state_disabled">disabled</string>
+
+    <!-- Memory and temperature view -->
+    <string name="memory_temperature_info">Memory: %1$d \/ %2$d MB&#160;&#160;Temp: %3$1.1f\u2103</string>
 </resources>

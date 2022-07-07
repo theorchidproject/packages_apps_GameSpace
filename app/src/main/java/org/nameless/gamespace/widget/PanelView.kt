@@ -15,13 +15,18 @@
  */
 package org.nameless.gamespace.widget
 
+import android.app.ActivityManager
 import android.content.Context
+import android.content.Intent
+import android.content.IntentFilter
+import android.os.BatteryManager
 import android.util.AttributeSet
 import android.view.LayoutInflater
 import android.view.View
 import android.view.WindowInsets
 import android.view.WindowManager
 import android.widget.LinearLayout
+import android.widget.TextView
 import androidx.core.view.doOnLayout
 import org.nameless.gamespace.R
 import org.nameless.gamespace.utils.dp
@@ -45,6 +50,22 @@ class PanelView @JvmOverloads constructor(
     override fun onAttachedToWindow() {
         super.onAttachedToWindow()
         applyRelativeLocation()
+        updateMemoryAndTemp()
+    }
+
+    private fun updateMemoryAndTemp() {
+        val activityManager = context.getSystemService(Context.ACTIVITY_SERVICE) as ActivityManager
+        val memInfo = ActivityManager.MemoryInfo()
+        activityManager.getMemoryInfo(memInfo)
+        val availMB = (memInfo.availMem / 1048576L).toInt();
+        val totalMB = (memInfo.totalMem / 1048576L).toInt();
+
+        val intent: Intent =
+                context.registerReceiver(null, IntentFilter(Intent.ACTION_BATTERY_CHANGED))
+        val temp = intent.getIntExtra(BatteryManager.EXTRA_TEMPERATURE, 0).toFloat() / 10
+
+        val info: TextView = findViewById(R.id.memory_temp_info)
+        info.text = context.getString(R.string.memory_temperature_info, availMB, totalMB, temp)
     }
 
     private fun applyRelativeLocation() {
