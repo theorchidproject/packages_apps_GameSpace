@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+     Copyright (C) 2021 Chaldeaprjkt
+                   2022 crDroid Android Project
+
+     Licensed under the Apache License, Version 2.0 (the "License");
+     you may not use this file except in compliance with the License.
+     You may obtain a copy of the License at
+
+          http://www.apache.org/licenses/LICENSE-2.0
+
+     Unless required by applicable law or agreed to in writing, software
+     distributed under the License is distributed on an "AS IS" BASIS,
+     WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+     See the License for the specific language governing permissions and
+     limitations under the License.
+-->
+<resources>
+    <string name="settings_title">Espaço de jogos</string>
+    <!-- In-game overlay -->
+    <string name="in_game_overlay_category_title">Menu de sobreposição</string>
+    <string name="gamespace_show_overlay_title">Habilitar menu de sobreposição</string>
+    <string name="gamespace_show_overlay_summary">Mostrar um botão flutuante que abre uma janela com ajustes rápidos ao tocar</string>
+    <string name="gamespace_menu_opacity_title">Nível de opacidade do menu de sobreposição</string>
+    <!-- Disable options -->
+    <string name="disable_options_category_title">Itens a desativar</string>
+    <string name="auto_brightness_disabled_title">Desativar o brilho automático</string>
+    <string name="auto_brightness_disabled_summary">Desativa o brilho automático assim que entrar no jogo</string>
+    <string name="three_screenshot_disabled_title">Desabilitar gesto de captura de tela</string>
+    <string name="three_screenshot_disabled_summary">Desativa o gesto de captura de tela assim que entrar no jogo</string>
+    <string name="adb_disabled_title">Desativar a depuração USB</string>
+    <string name="adb_disabled_summary">Desativa a depuração USB assim que entrar no jogo</string>
+    <!-- Notification options -->
+    <string name="notification_options_category_title">Opções das notificações</string>
+    <string name="suppress_fullscreen_intent_title">Impedir notificações em tela cheia</string>
+    <string name="suppress_fullscreen_intent_summary">Impede notificações em tela cheia (como ligações) de aparecer</string>
+    <string name="in_game_calls_title">Chamada enquanto joga</string>
+    <string name="in_game_calls_no_action">Não fazer nada</string>
+    <string name="in_game_calls_auto_answer">Atender automaticamente</string>
+    <string name="in_game_calls_auto_reject">Rejeitar automaticamente</string>
+    <string name="in_game_calls_received_number">Chamada recebida de %1$s</string>
+    <string name="in_game_calls_rejected_number">Chamada rejeitada de %1$s</string>
+    <string name="in_game_notifications_title">Notificações enquanto joga</string>
+    <string name="in_game_notifications_hide">Não mostrar</string>
+    <string name="in_game_notifications_headsup">Mostrar balões</string>
+    <string name="in_game_notifications_reticker">Mostrar reTicker</string>
+    <string name="in_game_notifications_danmaku">Mostrar Danmaku</string>
+    <string name="ringer_mode_title">Modo de toque</string>
+    <string name="ringer_mode_silent">Silencioso</string>
+    <string name="ringer_mode_vibrate">Vibração</string>
+    <string name="ringer_mode_normal">Normal</string>
+    <string name="ringer_mode_no_change">Não mudar</string>
+    <!-- Misc options -->
+    <string name="misc_options_category_title">Outras opções</string>
+    <string name="lock_gesture_title">Bloquear gestos</string>
+    <string name="lock_gesture_summary">Bloqueia gestos em tela cheia até que sejam realizados duas vezes</string>
+    <string name="stay_awake_title">Manter tela acesa</string>
+    <string name="stay_awake_summary">Mantém a tela sempre acessa enquanto joga</string>
+    <!-- Configure game -->
+    <string name="per_app_title">Configurar jogo</string>
+    <string name="per_app_mode_title">Modo preferido</string>
+    <string name="game_mode_unsupported">Não suportado</string>
+    <string name="game_mode_standard">Padrão</string>
+    <string name="game_mode_performance">Desempenho</string>
+    <string name="game_mode_battery">Bateria</string>
+    <string name="per_app_angle_title">Usar ANGLE (experimental)</string>
+    <string name="per_app_angle_summary">Usar renderizador ANGLE em vez dos drivers nativos GLES.\nATENÇÃO! Pode fazer com que alguns jogos apresentem problemas, use com cautela!</string>
+    <string name="cant_find_angle_pkg">O ANGLE não está disponível neste sistema</string>
+    <string name="per_app_unregister">Remover %1$s da lista de jogos</string>
+    <!-- Game picker -->
+    <string name="game_list_title">Lista de jogos</string>
+    <string name="game_list_add_title">Adicionar</string>
+    <string name="app_selector_label">Escolha o jogo</string>
+    <string name="app_search_title">Procurar</string>
+    <string name="game_remove_message">Tem certeza de que quer remover %1$s da lista de jogos?</string>
+    <!-- Tiles -->
+    <string name="game_mode_title">Modo</string>
+    <string name="fps_Info_title">Informação de FPS</string>
+    <string name="notifications_title">Notificações</string>
+    <string name="notifications_hide">Ocultar</string>
+    <string name="notifications_headsup">Balões</string>
+    <string name="notifications_reticker">reTicker</string>
+    <string name="notifications_danmaku">Danmaku</string>
+    <string name="state_enabled">ativado</string>
+    <string name="state_disabled">desativado</string>
+    <!-- Memory and temperature view -->
+    <string name="memory_temperature_info">Memória: %1$d \/ %2$d MB&#160;&#160; Temperatura: %3$1.1f\u2103</string>
+</resources>
