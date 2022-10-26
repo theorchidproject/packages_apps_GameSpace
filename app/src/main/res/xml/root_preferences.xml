@@ -19,21 +19,18 @@
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto">
 
-    <com.android.settingslib.widget.IllustrationPreference
-        android:key="game_settings_illustration_video"
-        app:lottie_rawRes="@raw/game_settings_illustration" />
 
     <PreferenceCategory
         android:key="in_game_overlay_category"
         android:title="@string/in_game_overlay_category_title">
 
-        <com.android.settings.custom.preference.SwitchPreference
+    <com.android.settings.preference.SystemSettingSwitchPreference
             android:key="gamespace_show_overlay"
             android:summary="@string/gamespace_show_overlay_summary"
             android:title="@string/gamespace_show_overlay_title"
             android:defaultValue="true" />
 
-        <com.android.settings.custom.preference.CustomSeekBarPreference
+        <com.android.settings.OrchidOs.preference.CustomSeekBarPreference
             android:key="gamespace_menu_opacity"
             android:title="@string/gamespace_menu_opacity_title"
             android:defaultValue="75"
@@ -46,18 +43,18 @@
         android:key="disable_options_category"
         android:title="@string/disable_options_category_title">
 
-        <com.android.settings.custom.preference.SwitchPreference
+    <com.android.settings.preference.SystemSettingSwitchPreference
             android:key="gamespace_auto_brightness_disabled"
             android:summary="@string/auto_brightness_disabled_summary"
             android:title="@string/auto_brightness_disabled_title" />
 
-        <com.android.settings.custom.preference.SwitchPreference
+    <com.android.settings.preference.SystemSettingSwitchPreference
             android:defaultValue="false"
             android:key="gamespace_tfgesture_disabled"
             android:summary="@string/three_screenshot_disabled_summary"
             android:title="@string/three_screenshot_disabled_title" />
 
-        <com.android.settings.custom.preference.SwitchPreference
+    <com.android.settings.preference.SystemSettingSwitchPreference
             android:defaultValue="false"
             android:key="gamespace_adb_disabled"
             android:summary="@string/adb_disabled_summary"
@@ -68,7 +65,7 @@
         android:key="notification_options_category"
         android:title="@string/notification_options_category_title">
 
-        <com.android.settings.custom.preference.SystemSettingSwitchPreference
+    <com.android.settings.preference.SystemSettingSwitchPreference
             android:key="gamespace_suppress_fullscreen_intent"
             android:summary="@string/suppress_fullscreen_intent_summary"
             android:title="@string/suppress_fullscreen_intent_title" />
@@ -102,13 +99,13 @@
         android:key="misc_options_category"
         android:title="@string/misc_options_category_title">
 
-        <com.android.settings.custom.preference.SwitchPreference
+    <com.android.settings.preference.SystemSettingSwitchPreference
             android:defaultValue="false"
             android:key="gamespace_lock_gesture"
             android:summary="@string/lock_gesture_summary"
             android:title="@string/lock_gesture_title" />
 
-        <com.android.settings.custom.preference.SwitchPreference
+    <com.android.settings.preference.SystemSettingSwitchPreference
             android:defaultValue="false"
             android:key="gamespace_stay_awake"
             android:summary="@string/stay_awake_summary"

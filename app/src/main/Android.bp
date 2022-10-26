@@ -26,7 +26,7 @@ android_app {
         "kotlinx-coroutines-android",
         "gson-prebuilt-jar",
         "hilt_android",
-        "custom-preference",
+        "org.lineageos.platform.internal",
     ],
     kotlincflags: [
         "-Xuse-experimental=kotlin.Experimental",
