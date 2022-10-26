@@ -16,7 +16,7 @@
      limitations under the License.
 -->
 <resources>
-    <string name="settings_title">Game space</string>
+    <string name="settings_title">Focused Gaming</string>
 
     <!-- In-game overlay -->
     <string name="in_game_overlay_category_title">In-game overlay</string>
